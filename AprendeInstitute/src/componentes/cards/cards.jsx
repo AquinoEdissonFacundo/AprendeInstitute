@@ -1,44 +1,8 @@
-// import React, { useState, useEffect } from 'react';
-
-// const Cards = () => {
-// 	const [characters, setCharacters] = useState([]);
-// 	const initialUrl =
-// 		'https://staging.aprende.dev/wp-json/aprende/v2/content/product-pages?posts_per_page=-1';
-
-// 	const fetchCharacters = (url) => {
-// 		fetch(url)
-// 			.then((response) => response.json())
-// 			.then((data) => {
-// 				console.log(data.results);
-// 				setCharacters(data.results);
-// 			})
-// 			.catch((error) => console.log(error));
-// 	};
-
-// 	useEffect(() => {
-// 		fetchCharacters(initialUrl);
-// 	}, []);
-
-// 	return (
-// 		<div className='col-md-4' key={characters.ID}>
-// 			<div className='card mb-4'>
-// 				{/* <img src={Cards.image} className='card-img-top' alt={characters.} /> */}
-// 				<div className='card-body'>
-// 					<h5 className='card-title'> titulo{characters.post_title}</h5>
-// 					{/* <p className='card-text'>Species: {Cards.species}</p> */}
-// 				</div>
-// 			</div>
-// 		</div>
-// 	);
-// };
-
-// export default Cards;
 import React, { useState, useEffect } from 'react';
-
 const Cards = () => {
-	const [characters, setCharacters] = useState({});
-	const [currentPage, setCurrentPage] = useState(1);
-	const [itemsPerPage] = useState(3);
+	const [charactersdata, setCharacters] = useState({});
+	const [start, setStart] = useState(0);
+	const [end, setEnd] = useState(4);
 	const initialUrl =
 		'https://staging.aprende.dev/wp-json/aprende/v2/content/product-pages?posts_per_page=-1';
 
@@ -58,51 +22,79 @@ const Cards = () => {
 		fetchCharacters(initialUrl);
 	}, []);
 
-	// Obtener las claves (IDs) de los personajes
-	const characterIds = Object.keys(characters);
-	console.log(characterIds);
-	// Calcular índices para la paginación
-	const indexOfLastCharacter = currentPage * itemsPerPage;
-	const indexOfFirstCharacter = indexOfLastCharacter - itemsPerPage;
-	const currentCharacterIds = characterIds.slice(
-		indexOfFirstCharacter,
-		indexOfLastCharacter
-	);
-
-	// Cambiar de página
-	const paginate = (pageNumber) => {
-		setCurrentPage(pageNumber);
+	const renderStars = (rating) => {
+		if (rating == null) rating = 0;
+		if (rating == '') rating = 0;
+		const stars = [];
+		for (let i = 1; i <= 5; i++) {
+			if (i <= rating) {
+				stars.push(
+					<span key={i} className='star filled'>
+						&#9733;
+					</span>
+				);
+			} else {
+				stars.push(
+					<span key={i} className='star'>
+						&#9733;
+					</span>
+				);
+			}
+		}
+		return stars;
 	};
-
+	const loadMore = () => {
+		setStart(end);
+		setEnd(end + 4);
+	};
+	const characterKeys = Object.keys(charactersdata);
+	console.log({ characterKeys });
+	console.log({ charactersdata });
+	const displayedCharacters = characterKeys.slice(start, end);
+	console.log('aaaaaaaaaaaaaaaaaaaaaaaaaa');
+	console.log(displayedCharacters);
 	return (
 		<div className='cards_container'>
-			<div className='cards_containertext'>
-				<h2 className='cards_h2'>Nuestros diplomados</h2>
-				<p className='cards_p'>
-					Usamos la tecnología a tu favor para que avances fácilmente en todos
-					los contenidos de nuestros diplomados, siempre con el acompañamiento
-					de un docente experto. ¿A cuál escuela quieres unirte?
-				</p>
-				<p>Escuela de Gastronomía</p> <p>Escuela de Hospital</p>
-			</div>
-			{currentCharacterIds.map((characterId) => {
-				const character = characters[characterId];
+			{/* {Object.keys(characters).map((characterId) => { */}
+			{displayedCharacters.map((characters, index) => {
+				const character = charactersdata[characters];
+				console.log({ character });
+				let rating = character.post_meta.product_rating;
 				return (
-					<div className='col-md-4' key={characterId}>
-						<div className='card mb-4'>
-							<img
-								src={character.post_meta.featured_image.mobile.src}
-								className='card-img-top'
-							/>
-							<div className='card-body'>
-								<h5 className='card-title'>{character.post_title}</h5>
-								{/* <p className='card-text'>Species: {character.species}</p> */}
-								<p> </p>
+					<div className='card_cont'>
+						<div className='content'>
+							<div className='image-with-overlay'>
+								<div className='scrollable-container'>
+									<img
+										src={character.post_meta.featured_image.mobile.src}
+										alt={character.post_title}
+										className='image'
+									/>
+								</div>
+								<div className='overlay'>
+									<div className='overlay_title'>
+										<h2 className='title'>{character.post_title}</h2>
+									</div>
+									<p className='students'>
+										{character.post_meta.related_product} Estudiantes
+									</p>
+									<div className='rating'>
+										{renderStars(character.post_meta.product_rating)}
+										<span className='rating-number'>
+											{rating ? rating : 0}/5
+										</span>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
 				);
 			})}
+			<div className='cards_contbuttom'>
+				<buttom className='cards_buttom' onClick={loadMore}>
+					Cargar Más
+				</buttom>
+			</div>
 		</div>
 	);
 };
