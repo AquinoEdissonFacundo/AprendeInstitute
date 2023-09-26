@@ -1,10 +1,10 @@
 
-@media (max-width: 767px)
+@media only screen and (min-width: 300px) and (max-width: 900px)
 
-.footer_container
-    display: flex
-    flex-direction: column
-    align-items: flex-start
+    .footer_container
+        display: flex
+        flex-direction: column
+        align-items: flex-start
     .footer_cont
         display: flex
         width: 100%
@@ -75,8 +75,16 @@
         align-self: stretch
     .footer_redessociales
         display: flex
-        align-items: flex-start
-        gap: 15px
+        align-items: center
+        gap: 5px
+        overflow-wrap: break-word
+        align-content: space-between
+        flex-direction: row
+        justify-content: space-between
+        max-width: 90%
+        svg
+            width: 20px
+            height: 20px
     .footer_linksredes
         color: #fff
     .footer_aprendeinstitute
@@ -89,4 +97,71 @@
         align-self: stretch
     .footer_li
         white-space: nowrap
-@media only screen and (min-width: 1024px)
+@media screen and (min-width: 900px)
+    .footer_cont
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        background: var(--colors-secondary-700, #1B2631)
+    .footer_main
+        height: 15em
+        display: flex
+        align-items: center
+        gap: 24px
+        align-self: stretch
+        justify-content: space-around
+    .footer_containersec1
+        display: flex
+        width: 291px
+        flex-direction: column
+        align-items: flex-start
+        gap: 15px
+
+        ul
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            gap: 6px
+        div
+            color: var(--support-white, #FFF)
+            text-align: center
+
+            font-family: Source Sans Pro
+            font-size: 16px
+            font-style: normal
+            font-weight: 600
+            line-height: 22px
+    .footer_conttitulo
+        color: #FFF
+        text-align: center
+        font-family: Source Sans Pro
+        font-size: 16px
+        font-style: normal
+        font-weight: 600
+        line-height: 22px
+
+    .footer_buttomcontainer
+        display: flex
+        padding: 30px 0px 15px 0px
+        flex-direction: row
+        justify-content: space-around
+        align-items: center
+        gap: 21px
+        align-self: stretch
+        border-top: 1px solid var(--support-white, #FFF)
+    .footer_apps
+        gap: 1em
+        display: flex
+        align-self: auto
+        align-items: center
+    .footer_redessociales
+        flex-shrink: 0
+        display: flex
+        align-items: flex-end
+        gap: 15px
+    .footer_aprendeinstitute
+        display: flex
+        flex-wrap: nowrap
+        gap: 2em
+        padding-left: 1em
+        align-items: center
