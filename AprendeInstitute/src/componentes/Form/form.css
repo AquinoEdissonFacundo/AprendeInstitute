@@ -1,0 +1,151 @@
+@media (max-width: 767px) {
+  .Form_containertext {
+    padding-left: 16px;
+  }
+  .Formulario_cont {
+    display: flex;
+    padding: 16px;
+    justify-content: space-around;
+  }
+  .Form_background {
+    background-color: #1B2631;
+  }
+  .Form_imgfondo {
+    display: flex;
+    width: 100%;
+  }
+  .Form_button {
+    color: white;
+    background-color: #DB0F3C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    display: flex;
+    padding: 12px 30px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 6px;
+    width: 100%;
+    border: none;
+  }
+  .Form_diplomado {
+    color: white;
+    font-family: Source-Sans-Pro-Semibold, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px 120%;
+  }
+  .Form_reposteria {
+    color: white;
+    font-family: Source-Sans-Pro-Semibold, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    background-color: #DB0F3C;
+    display: inline-flex;
+    padding: 0px 6px;
+    align-items: flex-start;
+  }
+  .Form_text {
+    width: 328px;
+    color: white;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: Source-Sans-Pro-Semibold, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 15px 0px 30px 0px;
+  }
+}
+.Formulario_container {
+  display: flex;
+  width: 330px;
+  padding: 21px 15px;
+  flex-direction: column;
+  align-items: center;
+  gap: 21px;
+  border-radius: 6px;
+  background-color: white;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
+}
+.Formulario_container .Formulario_primeraseccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+}
+.Formulario_container .Formulario_h4 {
+  align-self: stretch;
+  color: #1B2631;
+  text-align: center;
+  font-family: Source-Sans-Pro-Semibold, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+}
+.Formulario_container .Formulario_p1 {
+  align-self: stretch;
+  color: #1B2631;
+  text-align: center;
+  font-family: Source-Sans-Pro-Semibold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+.Formulario_container .Form_input {
+  display: flex;
+  padding: 9px 15px;
+  align-items: center;
+  gap: 6px;
+  align-self: stretch;
+  border-radius: 6px;
+  border: 1px solid var(--support-black-60, #767D83);
+  background: white;
+}
+.Formulario_container .Formulario_input {
+  display: flex;
+  height: 61px;
+  padding-top: 6px;
+  flex-direction: column;
+  align-items: flex-start;
+  align-self: stretch;
+  border-radius: 6px;
+}
+.Formulario_container .Formulario_containertextwpp {
+  display: flex;
+  padding: 9px 0px;
+  align-items: flex-start;
+  gap: 9px;
+  align-self: stretch;
+}
+.Formulario_container .Formulario_wpp {
+  color: white;
+  font-family: Source-Sans-Pro-Semibold, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.Formulario_container .Formulario.checkbox {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.Formulario_parrafo {
+  color: var(--support-black, var(--colors-secondary-700, #1B2631));
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* Estilos para el checkbox no seleccionado / *//*# sourceMappingURL=form.css.map */

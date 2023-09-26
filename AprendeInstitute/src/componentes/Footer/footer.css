@@ -1,0 +1,101 @@
+.footer_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.footer_container .footer_cont {
+  display: flex;
+  width: 360px;
+  padding: 30px 16px 15px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+  background: #1B2631;
+}
+.footer_container .footer_main {
+  display: flex;
+  height: 510px;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+.footer_container .footer_containersec1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  align-self: stretch;
+  color: #FFF;
+}
+.footer_container .footer_conttitulo {
+  color: #FFF;
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+}
+.footer_container a {
+  color: #FFF;
+  color: var(--support-white, #FFF);
+  text-align: center;
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+}
+.footer_container .footer_acercade {
+  display: flex;
+  width: 328px;
+  align-items: center;
+  gap: 30px;
+}
+.footer_container .footer_conttitulosedecategorias {
+  color: #FFF;
+  font-family: Source Sans Pro;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  align-self: stretch;
+}
+.footer_container .footer_buttomcontainer {
+  display: flex;
+  padding: 30px 0px 15px 0px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 21px;
+  align-self: stretch;
+  border-top: 1px solid var(--support-white, #FFF);
+}
+.footer_container .footer_apps {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  align-self: stretch;
+}
+.footer_container .footer_redessociales {
+  display: flex;
+  width: 328px;
+  align-items: flex-start;
+  gap: 15px;
+}
+.footer_container .footer_linksredes {
+  color: #fff;
+}
+.footer_container .footer_aprendeinstitute {
+  color: var(--support-white, #FFF);
+  font-family: Source Sans Pro;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px;
+  align-self: stretch;
+}
+.footer_container .footer_li {
+  white-space: nowrap;
+}/*# sourceMappingURL=footer.css.map */

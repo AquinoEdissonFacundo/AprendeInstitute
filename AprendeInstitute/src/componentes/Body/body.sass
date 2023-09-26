@@ -1,0 +1,70 @@
+$base-colorWhite: #FFFF
+$base-back: #1B2631
+$base-light-black: #2E4053
+
+@media only screen and (min-width: 300px) and (max-width: 900px)
+.body_container
+    display: flex
+    width: 100%
+    padding: 45px 16px
+    flex-direction: column
+    justify-content: center
+    align-items: flex-start
+    gap: 30px
+    background: white
+    background: $base-colorWhite
+    .body_subtitulo
+        width: 328px
+        color: #1B2631
+        text-align: center
+        font-family: Source Sans Pro
+        font-size: 24px
+        font-style: normal
+        font-weight: 700
+        line-height: 29px
+
+@mixin body-styles
+    color: $base-light-black
+    font-family: 'Source-Sans-Pro-Semibold', sans-serif
+    font-size: 16px
+    font-style: normal
+    display: flex
+    flex-wrap: nowrap
+    padding: 16px
+.body_estudia
+    @include body-styles
+
+.body_crecejunto
+    @include body-styles
+
+.body_obtencertificado
+    @include body-styles
+
+.body_formaparte
+    @include body-styles
+.body_practica
+    @include body-styles
+
+.body_accesoilimitado
+    @include body-styles
+
+@mixin body_logosvg
+    padding-right: 20px
+
+.body_logosvg
+    @include body_logosvg
+.body_p
+    color: var(--support-light-black, #2E4053)
+    font-family: Source Sans Pro
+    font-size: 16px
+    font-style: normal
+    font-weight: 400
+    line-height: 22px /* 137.5% */
+.body_h4
+    color: #1B2631
+    font-family: Source Sans Pro
+    font-size: 18px
+    font-style: normal
+    font-weight: 700
+    line-height: 22px
+@media only screen and (min-width: 1024px)
