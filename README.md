@@ -1,4 +1,4 @@
-![Aprende Institute](https://i.pinimg.com/originals/15/b0/34/15b0343f3bb9ce262c43397381582a96.jpg)
+![Aprende Institute](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3F9AUJhiw47n_d57-xumlsNWhzw4dqHdESg&usqp=CAU)
 
 ## Instrucciones de Inicio Rápido
 
