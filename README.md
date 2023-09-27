@@ -1,4 +1,7 @@
-![Aprende Institute](https://play-lh.googleusercontent.com/629-T8NY29LZRG0ppGD8riZFBmvo6N9Ig0WYHXWIJJN6NTFmN51qcnhoP6ajlVyCTpo)
+#Aprende Institute
+<p align="center">
+  <img src="https://play-lh.googleusercontent.com/629-T8NY29LZRG0ppGD8riZFBmvo6N9Ig0WYHXWIJJN6NTFmN51qcnhoP6ajlVyCTpo" alt="Aprende Institute">
+</p>
 
 ## Instrucciones de Inicio Rápido
 
