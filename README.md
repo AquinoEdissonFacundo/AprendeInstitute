@@ -18,8 +18,8 @@ Navegue hasta la carpeta principal del proyecto y ejecute el siguiente comando p
 cd AprendeInstitute
 npm install
 ```
-### 3.Luego Introduce "npm run dev" para levantar la aplicacion.
-La aplicación se ejecutará en su servidor local en el puerto [5173], por lo que puede acceder a ella en su navegador utilizando la siguiente URL:
+### 3.Luego Introduce "npm run dev" para levantar la pagina.
+La pagina se ejecutará en su servidor local en el puerto [5173], por lo que puede acceder a ella en su navegador utilizando la siguiente URL:
 http://localhost:5173
 
 ### 4. ¡Listo! Ahora puede echar un vistazo a la aplicación y explorar sus características.
