@@ -4,7 +4,7 @@
 
 ## Instrucciones de Inicio Rápido
 
-Siga estos pasos para iniciar la aplicación localmente.
+Siga estos pasos para iniciar la pagina web localmente.
 
 ### 1. Clonar el Repositorio
 
