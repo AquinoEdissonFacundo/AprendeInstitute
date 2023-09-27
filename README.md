@@ -1,4 +1,4 @@
-![Aprende Institute](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT3F9AUJhiw47n_d57-xumlsNWhzw4dqHdESg&usqp=CAU)
+![Aprende Institute](https://play-lh.googleusercontent.com/629-T8NY29LZRG0ppGD8riZFBmvo6N9Ig0WYHXWIJJN6NTFmN51qcnhoP6ajlVyCTpo)
 
 ## Instrucciones de Inicio Rápido
 
