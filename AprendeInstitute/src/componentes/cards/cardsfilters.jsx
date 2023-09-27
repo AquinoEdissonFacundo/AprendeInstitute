@@ -20,7 +20,6 @@ const EtiquetasFiltro = ({ etiquetas, datos, onEtiquetaSeleccionada }) => {
 	const etiquetasFiltradas = etiquetas.filter((etiqueta) =>
 		etiqueta.includes(filtro)
 	);
-
 	return (
 		<div>
 			<input
