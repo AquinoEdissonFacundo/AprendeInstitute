@@ -51,7 +51,7 @@ const Cards = () => {
   };
   const characterKeys = Object.keys(charactersdata);
 
-  // Filtrar personajes por escuela seleccionada
+  // filtro personajes por escuela
   const displayedCharacters = characterKeys
     .filter((characterKey) => {
       const character = charactersdata[characterKey];
