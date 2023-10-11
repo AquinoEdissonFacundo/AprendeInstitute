@@ -6,16 +6,15 @@ import Footer from '../Footer/footer';
 import Cards from '../cards/cards';
 
 const Home = () => {
-	return (
-		<div className='Home_container'>
-			<NavBar />
-			<Form />
-			<Body />
-			<Cards />
-			<Footer />
-		</div>
-	);
+  return (
+    <div className='Home_container'>
+      <NavBar />
+      <Form />
+      <Body />
+      <Cards />
+      <Footer />
+    </div>
+  );
 };
 
 export default Home;
-// characters={characters}
