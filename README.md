@@ -24,4 +24,4 @@ http://localhost:5173
 
 ### 4. ¡Listo! Ahora puede echar un vistazo a la aplicación y explorar sus características.
 
-### 5. Link del deploy https://aprende-institute.vercel.app/
+
